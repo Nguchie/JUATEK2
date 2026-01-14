@@ -30,13 +30,13 @@ export default function PilotProgram() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#demo"
+              href="mailto:juatekltd@gmail.com?subject=Apply for Pilot Program - JUATEK&body=Hello, I would like to apply for the JUATEK pilot program."
               className="inline-flex items-center justify-center px-8 py-4 bg-juatek-gold text-white font-semibold rounded-lg hover:bg-juatek-gold-dark transition-colors text-lg shadow-lg hover:shadow-xl"
             >
               Apply for Pilot
             </a>
             <a
-              href="#demo"
+              href="mailto:juatekltd@gmail.com?subject=Book a Demo - JUATEK&body=Hello, I would like to book a demo of JUATEK's machine intelligence system."
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-juatek-blue font-semibold rounded-lg hover:bg-gray-100 transition-colors text-lg shadow-lg hover:shadow-xl"
             >
               Book Demo

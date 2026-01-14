@@ -1,19 +1,19 @@
 export default function Solution() {
   const features = [
     {
-      title: 'External IoT Sensors',
-      description: 'Monitor vibration, temperature, current, usage cycles, and performance drift in real-time.',
+      title: 'Continuous Behavior Monitoring',
+      description: 'IoT sensors capture vibration, temperature, current, usage cycles, and performance signals continuously, building a complete picture of machine behavior.',
     },
     {
-      title: 'AI-Powered Analysis',
-      description: 'Machine learning models learn normal behavior over time and detect anomalies before they become failures.',
+      title: 'Behavioral Intelligence Layer',
+      description: 'AI models establish baselines, track drift patterns, and interpret how machines behave and degrade over time.',
     },
     {
-      title: 'Early Warning System',
-      description: 'Predict faults before standard alarms or shutdowns, giving you time to plan maintenance.',
+      title: 'Operational Insight & Predictions',
+      description: 'Transform raw signals into actionable insights, failure predictions, and maintenance recommendations based on behavioral patterns.',
     },
     {
-      title: 'Vendor-Agnostic',
+      title: 'Vendor-Agnostic Integration',
       description: 'Works with existing industrial and medical equipment. Non-intrusive and doesn\'t interfere with certified medical devices.',
     },
   ]
@@ -26,7 +26,7 @@ export default function Solution() {
             The JUATEK Solution
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            External IoT sensors monitor your equipment continuously. AI models learn normal behavior and predict failures before they happen.
+            JUATEK is a continuous machine behavior monitoring and interpretation system that builds baselines, tracks drift, and detects abnormal patterns to support informed maintenance decisions.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -1,4 +1,4 @@
-import Logo from './Logo'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -6,18 +6,38 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <Logo className="text-white [&_span]:text-white" />
+            <div className="relative w-32 h-auto mb-4">
+              <Image
+                src="/logo_footer.png"
+                alt="JUATEK Logo"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
+            </div>
             <p className="mt-4 text-sm">
               Kenya-based AI & IoT solutions for industrial and healthcare equipment
             </p>
           </div>
           <div>
             <h3 className="text-white font-semibold mb-4">Contact</h3>
-            <p className="text-sm">
-              <a href="mailto:info@juatek.com" className="hover:text-juatek-gold transition-colors">
-                info@juatek.com
-              </a>
-            </p>
+            <div className="space-y-2 text-sm">
+              <p>
+                <a href="mailto:juatekltd@gmail.com" className="hover:text-juatek-gold transition-colors">
+                  juatekltd@gmail.com
+                </a>
+              </p>
+              <p>
+                <a href="tel:+254708847933" className="hover:text-juatek-gold transition-colors">
+                  0708847933
+                </a>
+              </p>
+              <p>
+                <a href="tel:+254741504911" className="hover:text-juatek-gold transition-colors">
+                  0741504911
+                </a>
+              </p>
+            </div>
           </div>
           <div>
             <h3 className="text-white font-semibold mb-4">About</h3>

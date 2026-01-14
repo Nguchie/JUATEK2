@@ -17,7 +17,7 @@ export default function Navbar() {
               Use Cases
             </a>
             <a
-              href="#demo"
+              href="mailto:juatekltd@gmail.com?subject=Book a Demo - JUATEK&body=Hello, I would like to book a demo of JUATEK's machine intelligence system."
               className="px-6 py-2 bg-juatek-blue text-white rounded-lg hover:bg-juatek-blue-dark transition-colors"
             >
               Book Demo

@@ -1,22 +1,61 @@
 export default function UseCases() {
   const useCases = [
     {
-      category: 'Industrial',
+      category: 'Industrial & Manufacturing',
       icon: '🏭',
       items: [
-        'Manufacturing machines',
-        'Compressors & motors',
         'Production lines',
+        'Motors, compressors, pumps',
+        'CNC & heavy machinery',
+        'Packaging & processing equipment',
       ],
     },
     {
-      category: 'Healthcare & Medical',
+      category: 'Healthcare & Diagnostic Equipment',
       icon: '🏥',
       items: [
-        'Eye diagnostic machines (OCT, fundus cameras, slit lamps)',
-        'Dental chairs & imaging equipment',
-        'Sterilization and lab equipment',
-        'Diagnostic devices prone to mechanical wear',
+        'Imaging & diagnostic devices',
+        'Dental & ophthalmology equipment',
+        'Sterilization and lab systems',
+      ],
+    },
+    {
+      category: 'Energy & Utilities',
+      icon: '⚡',
+      items: [
+        'Power generators',
+        'Substations & transformers',
+        'Solar and backup systems',
+        'Water treatment pumps',
+      ],
+    },
+    {
+      category: 'Facilities & Infrastructure',
+      icon: '🏢',
+      items: [
+        'HVAC systems',
+        'Elevators & escalators',
+        'Data center cooling',
+        'Building systems',
+      ],
+    },
+    {
+      category: 'Logistics & Fleet Equipment',
+      icon: '🚚',
+      items: [
+        'Fleet machinery',
+        'Warehouse automation',
+        'Material handling equipment',
+        'Cold-chain systems',
+      ],
+    },
+    {
+      category: 'Labs, Research & High-Precision Equipment',
+      icon: '🔬',
+      items: [
+        'Research instruments',
+        'University lab equipment',
+        'Calibration-sensitive machines',
       ],
     },
   ]
@@ -29,10 +68,10 @@ export default function UseCases() {
             Use Cases
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            JUATEK protects critical equipment across industries.
+            Machine behavior intelligence applies across industries where understanding equipment performance and degradation patterns drives operational decisions.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {useCases.map((useCase, index) => (
             <div
               key={index}

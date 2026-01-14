@@ -9,7 +9,7 @@ export default function DemoSection() {
             Book a Free Demo
           </h2>
           <p className="text-xl text-gray-600">
-            See how JUATEK can protect your equipment and operations.
+            See how JUATEK transforms machine signals into actionable operational insight.
           </p>
         </div>
         <DemoForm />

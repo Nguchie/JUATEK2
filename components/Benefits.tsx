@@ -1,28 +1,28 @@
 export default function Benefits() {
   const benefits = [
     {
-      title: 'Reduce Unplanned Downtime',
-      description: 'Predict failures before they happen and schedule maintenance during planned windows.',
+      title: 'Plan Instead of React',
+      description: 'Understand machine degradation patterns and schedule maintenance during planned windows rather than responding to unexpected failures.',
     },
     {
-      title: 'Protect Critical Medical Equipment',
-      description: 'Ensure diagnostic and treatment equipment is always ready when patients need it.',
+      title: 'Visibility Into Machine Behavior',
+      description: 'Gain continuous insight into how equipment behaves and degrades over time, eliminating the black box problem.',
     },
     {
-      title: 'Improve Patient Service Continuity',
-      description: 'Prevent equipment failures that delay appointments and impact patient care.',
+      title: 'Operational Confidence',
+      description: 'Make maintenance decisions with confidence based on behavioral intelligence rather than fixed schedules or guesswork.',
     },
     {
-      title: 'Lower Repair and Replacement Costs',
-      description: 'Early detection means smaller, less expensive repairs instead of major replacements.',
+      title: 'Optimize Maintenance Costs',
+      description: 'Intervene at the right time based on actual machine condition, avoiding both premature maintenance and costly emergency repairs.',
     },
     {
       title: 'Extend Equipment Lifespan',
-      description: 'Proactive maintenance keeps equipment running optimally for longer.',
+      description: 'Maintain equipment based on behavioral understanding, keeping machines running optimally throughout their lifecycle.',
     },
     {
-      title: 'Enable Data-Driven Decisions',
-      description: 'Make maintenance decisions based on actual equipment data, not guesswork.',
+      title: 'Cross-Industry Application',
+      description: 'Apply machine intelligence across industrial and healthcare environments where understanding equipment behavior matters.',
     },
   ]
 
@@ -34,7 +34,7 @@ export default function Benefits() {
             Key Benefits
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Transform your maintenance strategy from reactive to predictive.
+            Gain visibility, confidence, and control through machine behavior intelligence.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -21,23 +21,50 @@ export default function DemoForm() {
     })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically send the data to your backend
-    console.log('Form submitted:', formData)
-    setSubmitted(true)
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setSubmitted(false)
-      setFormData({
-        name: '',
-        organization: '',
-        industry: '',
-        equipmentType: '',
-        email: '',
-        phone: '',
+    
+    try {
+      // Send form data to API route
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       })
-    }, 3000)
+
+      if (response.ok) {
+        setSubmitted(true)
+        // Reset form after 5 seconds
+        setTimeout(() => {
+          setSubmitted(false)
+          setFormData({
+            name: '',
+            organization: '',
+            industry: '',
+            equipmentType: '',
+            email: '',
+            phone: '',
+          })
+        }, 5000)
+      } else {
+        // Fallback: open email client with form data
+        const subject = encodeURIComponent(`Demo Request - ${formData.organization}`)
+        const body = encodeURIComponent(
+          `Name: ${formData.name}\nOrganization: ${formData.organization}\nIndustry: ${formData.industry}\nEquipment Type: ${formData.equipmentType}\nEmail: ${formData.email}\nPhone: ${formData.phone}`
+        )
+        window.location.href = `mailto:juatekltd@gmail.com?subject=${subject}&body=${body}`
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      // Fallback: open email client with form data
+      const subject = encodeURIComponent(`Demo Request - ${formData.organization}`)
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\nOrganization: ${formData.organization}\nIndustry: ${formData.industry}\nEquipment Type: ${formData.equipmentType}\nEmail: ${formData.email}\nPhone: ${formData.phone}`
+      )
+      window.location.href = `mailto:juatekltd@gmail.com?subject=${subject}&body=${body}`
+    }
   }
 
   if (submitted) {

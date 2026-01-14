@@ -2,23 +2,23 @@ export default function HowItWorks() {
   const steps = [
     {
       number: '1',
-      title: 'Sensors Collect Data',
-      description: 'IoT sensors continuously monitor vibration, temperature, current, and usage patterns in real-time.',
+      title: 'Sensors Capture Machine Signals',
+      description: 'IoT sensors continuously collect vibration, temperature, current, and usage data, transforming machine operation into interpretable signals.',
     },
     {
       number: '2',
-      title: 'AI Analyzes Patterns',
-      description: 'Machine learning models analyze data patterns, detect anomalies, and learn normal equipment behavior.',
+      title: 'AI Learns & Establishes Baselines',
+      description: 'Machine learning models learn normal behavior patterns, establish baselines, and track how equipment performance drifts over time.',
     },
     {
       number: '3',
-      title: 'Early Warnings Generated',
-      description: 'The system generates early warnings and failure predictions before standard alarms trigger.',
+      title: 'Behavioral Insights Generated',
+      description: 'The system interprets behavioral patterns, identifies degradation trends, and generates predictions and recommendations based on machine intelligence.',
     },
     {
       number: '4',
-      title: 'Teams Act Proactively',
-      description: 'Your maintenance team receives alerts and can schedule repairs before breakdown or service interruption.',
+      title: 'Teams Make Informed Decisions',
+      description: 'Maintenance teams receive actionable insights and can plan interventions based on behavioral understanding rather than reacting to failures.',
     },
   ]
 
@@ -30,7 +30,7 @@ export default function HowItWorks() {
             How It Works
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A simple, powerful process that transforms reactive maintenance into proactive protection.
+            A systematic approach to understanding machine behavior and making data-driven maintenance decisions.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

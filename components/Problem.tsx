@@ -1,20 +1,20 @@
 export default function Problem() {
   const painPoints = [
     {
-      title: 'Machines fail without enough warning',
-      description: 'Standard alerts trigger too late, after damage has already started.',
+      title: 'Machines operate as black boxes',
+      description: 'Equipment runs without visibility into how it behaves and degrades over time, making maintenance decisions reactive rather than informed.',
     },
     {
-      title: 'Medical equipment downtime delays patient care',
-      description: 'Critical diagnostic and treatment equipment breaks down unexpectedly, impacting patient outcomes.',
+      title: 'Maintenance relies on fixed schedules or reactions',
+      description: 'Teams follow calendar-based maintenance or wait for failures, missing opportunities to optimize based on actual machine condition.',
     },
     {
-      title: 'Reactive maintenance is expensive and risky',
-      description: 'Emergency repairs cost 3-5x more than planned maintenance and create operational disruptions.',
+      title: 'Machine data exists but isn\'t interpreted',
+      description: 'Equipment generates signals continuously, but without behavioral intelligence, this data doesn\'t translate into actionable insights.',
     },
     {
-      title: 'Built-in alerts miss early warning signs',
-      description: 'Manufacturer alerts only detect problems after they become critical, not before they start.',
+      title: 'Failures feel unexpected due to lack of insight',
+      description: 'Without understanding normal behavior patterns and degradation trends, equipment failures appear sudden and unplanned.',
     },
   ]
 
@@ -26,7 +26,7 @@ export default function Problem() {
             The Problem
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Equipment failures happen when you least expect them, causing costly downtime and putting operations at risk.
+            Most organizations lack visibility into how their machines behave and degrade over time, leading to reactive maintenance and operational uncertainty.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
